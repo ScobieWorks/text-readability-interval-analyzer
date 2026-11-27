@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-readability-interval-analyzer"
+version = "0.1.0"
+description = "A lightweight CLI that splits a plain\u2011text file into user\u2011defined chunks and computes Flesch\u2011Kincaid and SMOG scores for each chunk, reporting a table and ASCII heat\u2011map. Optionally writes a JSON report."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+
+[project.scripts]
+"text-readability-interval-analyzer" = "text_readability_interval_analyzer:main"
+
+[project.urls]
+Repository = "https://github.com/ScobieWorks/text-readability-interval-analyzer"
+
+[tool.setuptools]
+py-modules = ["text_readability_interval_analyzer"]
